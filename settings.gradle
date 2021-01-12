@@ -6,7 +6,7 @@ include ':paging-app'
 include ':core-util'
 include ':video'
 
-project(':app').name = 'Signal-Android'
+project(':app').name = 'Ping-Android'
 project(':paging').projectDir = file('paging/lib')
 project(':paging-app').projectDir = file('paging/app')
 

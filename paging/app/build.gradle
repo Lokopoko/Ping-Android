@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    buildToolsVersion BUILD_TOOL_VERSION
-    compileSdkVersion COMPILE_SDK
+    buildToolsVersion '30.0.3'
+    compileSdkVersion 30
 
     defaultConfig {
         applicationId "org.signal.pagingtest"
@@ -14,8 +14,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JAVA_VERSION
-        targetCompatibility JAVA_VERSION
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    dependenciesInfo {
+        includeInApk true
+        includeInBundle true
     }
 }
 
